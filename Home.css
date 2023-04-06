@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1, h2, button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header{
+    background-color: #333;
+    /*position: sticky;
+    top: 0;*/
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px 20px;
+}
+
+header a:hover{
+    color: hsl(23deg 100% 82%);
+    background-color: rgba(221, 221, 221, 0.219);
+}
+
+.active{
+    color: hsl(23deg 100% 82%);
+    background-color: rgba(221, 221, 221, 0.219);
+}
+
+header .container,
+#f-section{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+#f-section{
+    height: calc(100vh - 68.42px);
+    background-image: url(img/pexels-castorly-stock-3682238.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    position: relative;
+}
+
+#f-section .opacity{
+    background-color: rgba(0, 0, 0, 0.171);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#f-section .container{
+    z-index: 50;
+}
+
+#f-section h1 span {
+    color: hsl(23deg 100% 82%);
+}
+
+#f-section p{
+    margin-bottom: 25px;
+}
+
+#f-section button{
+    background-color: black;
+    color: white;
+    border: 1px solid #333;
+    font-size: 25px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#f-section button:hover{
+    color: black;
+    background-color: hsl(23deg 100% 82%);
+    border: 1px solid white;
+}
+
+#s-section{
+    display: flex;
+    background-color: #333;
+}
+
+#s-section div{
+    width: 50%;
+}
+
+#s-section div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#s-section .main-content{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+#s-section .main-content h1{
+    font-size: 29px;
+}
+
+#s-section .main-content p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#s-section .main-content h1 span{
+    color: hsl(23deg 100% 82%);
+}
+
+#s-section .main-content button{
+    background-color: white;
+    color: black;
+    border: 1px solid #333;
+    font-size: 20px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+#s-section .main-content button:hover {
+    color: black;
+    background-color: hsl(23deg 100% 82%);
+    border: 1px solid white;
+}
+
+#t-section{
+    display: flex;
+}
+
+#t-section .card{
+    width: 33.3333%;
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    border: 1px solid #bbb;
+}
+
+#t-section .card *{
+    margin-bottom: 20px;
+}
+
+#t-section .card i{
+    font-size: 50px;
+    object-fit: cover;
+}
+
+#t-section div:hover{
+    background-color: hsl(23deg 100% 82%);
+    cursor: text;
+}
+
+#c-section {
+    height: calc(100vh - 68.42px);
+    background-size: cover;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+}
+
+#c-section .container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+#c-section h2 span {
+    color: hsl(23deg 100% 82%);
+}
+
+#c-section h2{
+    margin-top: 100px;
+}
+
+#c-section p{
+    width: 90%;
+    margin-top: 20px;
+}
+
+#c-section .first {
+    width: 70%;
+}
+
+#c-section .second {
+    width: 30%;
+}
+
+#c-section .second img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+
+#d-section {
+    background-image: url(img/pexels-pixabay-460537.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    color: white;
+    text-align: center;
+    height: calc(100vh - 50.42px);
+}
+
+#d-section .container{
+    width: 80%;
+    margin: auto;
+}
+
+#d-section h1 {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+#d-section .cards {
+    width: 70%;
+    background-color: rgba(224, 182, 102, 0.836);
+    color: black;
+    margin-bottom: 25px;
+    margin-right: 50%;
+    margin-left: 200px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#d-section .cards img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#d-section .cards p {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#a-section {
+    height: calc(100vh - 68.42px);
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    padding: 20px;
+}
+
+#a-section .container{
+    width: 80%;
+    margin: auto;
+}
+
+#a-section h1 span {
+    color: hsl(23deg 100% 82%);
+}
+
+#a-section p{
+    margin-bottom: 20px;
+}
+
+#a-section input {
+    width: 100%;
+    padding: 15px;
+    height: 30px;
+}
+
+#a-section textarea {
+    width: 100%;
+    padding: 15px;
+    height: 80px;
+}
+
+#a-section .input {
+    margin-bottom: 20px;
+}
+
+#a-section button {
+    background-color: black;
+    color: white;
+    border: 1px solid #333;
+    font-size: 25px;
+    padding: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#a-section button:hover {
+    color: black;
+    background-color: hsl(23deg 100% 82%);
+    border: 1px solid white;
+}
+
+#b-section {
+    display: flex;
+}
+
+#b-section .card {
+    width: 33.3333%;
+    background-color: black;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+#b-section .card * {
+    margin-bottom: 20px;
+}
+
+#b-section .card i {
+    font-size: 50px;
+    object-fit: cover;
+}
+
+#b-section div:hover {
+    background-color: hsl(23deg 100% 82%);
+    color: black;
+    cursor: text;
+}
+
+footer{
+    background-color: #333;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+footer span:hover{
+    color: hsl(23deg 100% 82%);
+}
